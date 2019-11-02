@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .col-3 {
+                width: 33%;
+                flex: 1 0 33%;
+                color: black;
+                padding: 20px;
+            }    
+
+            .module-inner {
+                margin-top: 0;
+                padding: 10px 25px;
+                margin-bottom: 0;
+            }
+
+            .module-inner {
+                margin-top: 25px !important;
+            }
+
+            .module-inner {
+                max-width: 1100px !important;
+                margin: 0 auto !important;
+            }
+            .start-center {
+                place-content: center flex-start;
+                align-items: center;
+            }
+            .row {
+                display: flex;
+                flex-direction: row;
+            }
+            .module-container {
+                padding: 0 20px;
+                overflow: hidden;
+                color: black;
+            }
+        </style>
+
+        <link rel="stylesheet" type="text/css"  href="animations.css" />
+    </head>
+    <body>
+        <section class="module-container">
+            <div class="module-inner row start-center">
+                <div class="col-3" data-fade-container="hover">
+                    <div style="height: 100px;">
+                        <div data-line-animation class="draw-line-start"></div>
+                    </div>
+                    <div data-fade-in="bottom" class="fade-out-bottom">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3" data-fade-container="hover">
+                    <div style="height: 100px;">
+                        <div data-line-animation class="draw-line-start"></div>
+                    </div>
+                    <div data-fade-in="right" class="fade-out-right">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3" data-fade-container="hover">
+                    <div style="height: 100px;">
+                        <div data-line-animation class="draw-line-start"></div>
+                    </div>
+                    <div data-fade-in="left" class="fade-out-left">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script src="animations.js"></script>
+    </body>
+</html>
+
+
